@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+:root {
+    --primária: orange;
+    --dark-one: #344;
+    --dark-two: #333;
+}
+* {
+    box-sizing: border-box;
+    padding:0px;
+    margin:0px;
+    font-family: 'Lato', sans-serif;
+}
+
+.titulo {
+   background: var(--dark-one);
+   width:100%;
+   border-bottom: 2rem solid white;
+   border-right: 2rem solid white;
+   border-left: 2rem solid white;
+   height:75px;
+   color:#fff;
+   text-shadow: 4px 3px 8px var(--dark-two);
+   font-size: 27px; 
+   font-weight: 700;
+   text-align: center;
+}
+.contentor {
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    align-items: flex-start;
+    justify-content: center;
+    gap:30px;
+    height:700px;
+}
+.cartao {
+    border:2px solid var(--dark-one);
+    box-shadow: 5px 6px 8px var(--dark-two);
+    width:500px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: orange;
+}
+.destaque {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 50px;
+}
+.multimedia {
+    width: 100%;
+    border: 1rem solid white;
+    object-fit: cover;
+    height: 400px;
+    transition: opacity 0.5s ease-in;
+
+}
+.multimedia:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+.frase {
+    padding:10px;
+    width: 400px;
+    font-size: 25px;
+    height:120px;
+}
+.btn {
+    width:100%;
+    text-align: center;
+    text-decoration: none;
+    background: var(--dark-one);
+    color:white;
+    padding: 15px;
+    font-size: 30px;
+    cursor:pointer;
+    transition: opacity 0.6s ease-in-out;
+}
+.btn:hover {
+    opacity: 0.7;
+}
